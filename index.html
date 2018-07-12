@@ -18,26 +18,28 @@
           </a>
         </div>
         <nav class="page-header__nav">
-          <ul class="site-nav  site-nav--horizontal">
-            <li class="site-nav__item">
-              <a class="site-nav__link  site-nav__link--active">Главная</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Прп. Савва Сторожевский</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Жизнь прихода</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Фотоальбом</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Контакты</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="javascript:void(0)">Пожертвования</a>
-            </li>
-          </ul>
+          <div class="page-header__nav-inner">
+            <ul class="site-nav  site-nav--horizontal">
+              <li class="site-nav__item">
+                <a class="site-nav__link  site-nav__link--active">Главная</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="javascript:void(0)">Прп. Савва Сторожевский</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="javascript:void(0)">Жизнь прихода</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="javascript:void(0)">Фотоальбом</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="javascript:void(0)">Контакты</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="javascript:void(0)">Пожертвования</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -49,35 +51,39 @@
         <h2 class="visually-hidden">Братья и сестры</h2>
         <div class="carousel">
           <div class="carousel__items">
-            <div class="carousel__item">
-              <div class="container  carousel__content">
-                <h3 class="carousel__content-title">Дорогие братья и сестры</h3>
-                <p class="carousel__content-text">
-                  Приглашаем Вас каждое воскресенье в 13.00 на молебен о
-                  строительстве Храма преподобного Саввы Сторожевского.
-                  Молебен служится на месте строительства по адресу: пл.
-                  Викторио Кодовильи, вл. 1 напротив бывшего кинотеатра
-                  “Енисей”
-                </p>
+            <div class="carousel__item  carousel__item-1  carousel__item--active">
+              <div class="container">
+                <div class="carousel__content">
+                  <h3 class="carousel__content-title">Дорогие братья и сестры</h3>
+                  <p class="carousel__content-text">
+                    Приглашаем Вас каждое воскресенье в 13.00 на молебен о
+                    строительстве Храма преподобного Саввы Сторожевского.
+                    Молебен служится на месте строительства по адресу: пл.
+                    Викторио Кодовильи, вл. 1 напротив бывшего кинотеатра
+                    “Енисей”
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="carousel__item">
-              <div class="container  carousel__content">
-                <h3 class="carousel__content-title">Дорогие братья и сестры</h3>
-                <p class="carousel__content-text">
-                  Приглашаем детей в возрасте от 5 лет для занятий в воскресной
-                  группе при храме преподобного Саввы Сторожевского.
-                  Занятия начнутся с октября 2016 года.
-                  Запись в группу осуществляется по воскресеньям с 13-14 часов.
-                </p>
+            <div class="carousel__item  carousel__item-2">
+              <div class="container">
+                <div class="carousel__content">
+                  <h3 class="carousel__content-title">Дорогие братья и сестры</h3>
+                  <p class="carousel__content-text">
+                    Приглашаем детей в возрасте от 5 лет для занятий в воскресной
+                    группе при храме преподобного Саввы Сторожевского.
+                    Занятия начнутся с октября 2016 года.
+                    Запись в группу осуществляется по воскресеньям с 13-14 часов.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel__controls">
-            <button class="carousel__control" type="button" title="Слайд 1">
+          <div class="carousel__indicators">
+            <button class="carousel__indicator" type="button" title="Слайд 1">
               <span class="visually-hidden">Слайд 1</span>
             </button>
-            <button class="carousel__control" type="button" title="Слайд 2">
+            <button class="carousel__indicator" type="button" title="Слайд 2">
               <span class="visually-hidden">Слайд 2</span>
             </button>
           </div>
@@ -289,10 +295,10 @@
         <ul class="pagination">
           <li class="pagination__item">
             <a class="pagination__link  pagination__link--prev  pagination__link--disabled" href="javascript:void(0)" tabindex="-1">
-              <span class="visually-hidden">Назад</span>
               <span class="pagination__link-icon">
                 <svg height="14" viewBox="0 0 128 128" width="14" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#2f3435" stroke-width="12" stroke-linecap="square" stroke-miterlimit="10"><path stroke="#595959" d="M87.5 111l-47-47M40.5 64l47-47"/></g></svg>
               </span>
+              <span class="visually-hidden">Назад</span>
             </a>
           </li>
           <li class="pagination__item">
@@ -315,10 +321,10 @@
           </li>
           <li class="pagination__item">
             <a class="pagination__link  pagination__link--next" href="javascript:void(0)">
-              <span class="visually-hidden">Вперед</span>
               <span class="pagination__link-icon">
                 <svg height="14" viewBox="0 0 128 128" width="14" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#2f3435" stroke-width="12" stroke-linecap="square" stroke-miterlimit="10"><path stroke="#595959" d="M40.5 17l47 47M87.5 64l-47 47"/></g></svg>
               </span>
+              <span class="visually-hidden">Вперед</span>
             </a>
           </li>
         </ul>

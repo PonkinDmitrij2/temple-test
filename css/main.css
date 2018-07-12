@@ -54,7 +54,7 @@
        url("../fonts/pt-sans-v9-cyrillic_latin-700.woff2") format("woff2"),
        url("../fonts/pt-sans-v9-cyrillic_latin-700.woff") format("woff");
 }
-/* ==================== FONT-FACE end ==================== */
+
 
 
 /* ========================================
@@ -70,7 +70,6 @@ html {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
-  letter-spacing: 0.005em;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -84,6 +83,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  letter-spacing: 0.005em;
   color: #737373;
   background: #f2f2f2 url("../img/bg/bg.jpg") 0 0 repeat;
 }
@@ -98,12 +98,13 @@ body {
 }
 
 .container {
-  width: 1170px;
+  width: 1164px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* box-shadow: 0 0 0 1px green !important; */
 }
-/* ==================== COMMON end ==================== */
+
 
 
 /* ========== visually-hidden ========== */
@@ -122,12 +123,133 @@ body {
 
 
 
+/* ========================================
+   $PAGE-HEADER
+   ======================================== */
+.page-header {
+  margin-bottom: 1px;
+  padding-top: 36px;
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  margin-bottom: 41px;
+}
+
+
+
+/* ========================================
+   $LOGO
+   ======================================== */
+.logo {
+  display: block;
+  font-family: "Cormorant Infant", "Times New Roman", "Times", serif;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #262626;
+}
+
+.logo span {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 300;
+  font-style: italic;
+  color: #595959;
+}
+
+
+
+.page-header__nav {
+  overflow: hidden;
+}
+
+.page-header__nav-inner {
+  margin: 0 -40px;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+
+/* ========================================
+   $SITE-NAV
+   ======================================== */
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #262626;
+  background-color: #fff;
+}
+
+.site-nav__link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  text-decoration: underline;
+}
+
+.site-nav--horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-nav--horizontal .site-nav__link {
+  padding: 18px 40px;
+}
+
+.site-nav--horizontal .site-nav__link:hover,
+.site-nav--horizontal .site-nav__link:focus {
+  text-decoration: none;
+  color: #48974c;
+  background-color: #f8f8f8;
+}
+
+.site-nav--horizontal .site-nav__link--active,
+.site-nav--horizontal .site-nav__link--active:hover {
+  color: #48974c;
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
 
 
 
 /* ========================================
    $TEST!
    ======================================== */
+/* BODY > * {
+outline: 2px solid deeppink;
+} */
+
+/* BODY > * > * {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+} */
+
+/* BODY > * > * > * {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
+} */
+
+
 .test {
   background-color: rgba(0, 128, 0, 0.2) !important;
   box-shadow: 0 0 0 1px green !important;
