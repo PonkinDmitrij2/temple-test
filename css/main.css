@@ -105,6 +105,11 @@ body {
   /* box-shadow: 0 0 0 1px green !important; */
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 
 /* ========== visually-hidden ========== */
@@ -119,6 +124,50 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+
+/* ========================================
+   $BTN
+   ======================================== */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 16px 30px;
+  border: 1px solid #48974c;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #48974c;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #54ad58;
+  border-color: #54ad58;
+}
+
+.btn:active {
+  background-color: #3d8040;
+  border-color: #3d8040;
+}
+
+.btn--transparent {
+  color: #48974c;
+  background-color: transparent;
+}
+
+.btn--transparent:hover,
+.btn--transparent:focus {
+  color: #ffffff;
 }
 
 
@@ -225,6 +274,15 @@ body {
 
 
 /* ========================================
+   $PROMO
+   ======================================== */
+.promo {
+  margin-bottom: 30px;
+}
+
+
+
+/* ========================================
    $CAROUSEL
    ======================================== */
 .carousel {
@@ -321,6 +379,180 @@ body {
 .carousel__indicator--active {
   opacity: 1;
 }
+
+
+
+/* ========================================
+   $INDEX-LAYOUT
+   ======================================== */
+.index-row {
+  justify-content: space-between;
+}
+
+.index-col {
+  width: 48.7%;
+}
+
+
+
+/* ========================================
+   $BLOG
+   ======================================== */
+.blog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.blog__item {
+  margin-bottom: 30px;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.blog__item:last-child {
+  margin-bottom: 25px;
+}
+
+.item-blog__photo {
+  position: relative;
+  margin-bottom: 19px;
+  padding-bottom: 64%;
+}
+
+.item-blog__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+.item-blog__datetime {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding-left: 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #a6a6a6;
+}
+
+.item-blog__datetime::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 15px;
+  height: 16px;
+  background: url("../img/bg/icon-calend.svg") 0 0 no-repeat;
+}
+
+.item-blog__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "Cormorant Infant", "Times New Roman", "Times", serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 600;
+  color: #262626;
+}
+
+.item-blog__text {
+  margin: 0;
+  margin-bottom: 18px;
+  line-height: 1.63;
+  color: #737373;
+}
+
+.item-blog__actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-blog__more-link {
+  width: 156px;
+}
+
+
+
+/* ========================================
+   $SOCIALS
+   ======================================== */
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 19.5px;
+}
+
+.socials__link {
+  display: block;
+  text-decoration: none;
+}
+
+.socials__link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__link:hover path,
+.socials__link:focus path {
+  fill: #48974c;
+}
+
+.socials__link:active path {
+  fill: #3d8040;
+}
+
+
+
+.blog__link {
+  width: 156px;
+  margin-left: 25px;
+}
+
+.blog__link-text {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.blog__link-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -5px;
+}
+
+.blog__link-icon svg {
+  display: inline-block;
+}
+
+
+
+
+/* ========================================
+   $NEWS
+   ======================================== */
+.news__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
 
 
 
