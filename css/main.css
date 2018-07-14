@@ -319,7 +319,13 @@ body {
 }
 
 .carousel__content {
-  padding: 80px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 23%;
+  padding-top: 80px;
+  overflow: auto;
 }
 
 .carousel-content__col {
@@ -372,12 +378,17 @@ body {
   border-radius: 50%;
   opacity: 0.6;
   transition: opacity 0.5s;
+  cursor: pointer;
 }
 
 .carousel__indicator:hover,
 .carousel__indicator:focus,
 .carousel__indicator--active {
   opacity: 1;
+}
+
+.carousel__indicator--active {
+  cursor: default;
 }
 
 
