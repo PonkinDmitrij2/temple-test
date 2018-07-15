@@ -102,7 +102,6 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* box-shadow: 0 0 0 1px green !important; */
 }
 
 
@@ -206,6 +205,18 @@ body {
   color: #595959;
 }
 
+.logo--page-footer {
+  line-height: 1.2;
+  text-align: left;
+  color: #fff;
+}
+
+.logo--page-footer span {
+  display: block;
+  margin-top: 11px;
+  color: #fff;
+}
+
 
 
 .page-header__nav {
@@ -264,6 +275,15 @@ body {
 .site-nav--horizontal .site-nav__link--active:hover {
   color: #48974c;
   background-color: transparent;
+}
+
+.site-nav--page-footer {
+  color: #fff;
+  background-color: transparent;
+}
+
+.site-nav--page-footer .site-nav__item {
+  margin-bottom: 10px;
 }
 
 
@@ -585,7 +605,6 @@ body {
   width: 1px;
   content: "";
   background-color: #e6e6e6;
-  /* background-color: red; */
 }
 
 .news__item::after {
@@ -659,7 +678,7 @@ body {
   left: 2px;
   width: 16px;
   height: 16px;
-  background: url("../img/bg/circle-arrow-right.svg");
+  background: url("../img/bg/circle-arrow-right.svg") 0 0 no-repeat;
 }
 
 .item-news__more-link:hover,
@@ -839,50 +858,53 @@ body {
 
 
 
-
-
-
-
-
-
-
 /* ========================================
-   $TEST!
+   $PAGE-FOOTER
    ======================================== */
-/* BODY > * {
-outline: 2px solid deeppink;
-} */
-
-/* BODY > * > * {
-  outline: 2px dashed lime;
-  outline-offset: -2px;
-} */
-
-/* BODY > * > * > * {
-  outline: 2px dotted dodgerblue;
-  outline-offset: -4px;
-} */
-
-
-.test {
-  background-color: rgba(0, 128, 0, 0.2) !important;
-  box-shadow: 0 0 0 1px green !important;
+.page-footer {
+  margin-top: auto;
+  padding-top: 42px;
+  color: #ffffff;
+  background-color: #404040;
 }
 
-.test-2 {
-  background-color: rgba(234, 255, 45, 0.2) !important;
-  box-shadow: inset 0 0 0 1px rgb(234, 255, 45) !important;
+.page-footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 44px;
 }
 
-.test-3 {
-  background-color: rgba(255, 45, 82, 0.2) !important;
-  box-shadow: 0 0 0 1px rgb(255, 45, 82) !important;
+.page-footer__logo {
+  flex: 0 0 40%;
+  max-width: 40%;
+  margin-right: auto;
 }
-/* ==================== TEST! end ==================== */
 
+.page-footer__links {
+  flex: 0 0 32%;
+  max-width: 32%;
+  padding-top: 11px;
+  padding-left: 58px;
+}
 
-/* ========================================
-   $
-   ======================================== */
+.page-footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
 
-/* ====================  end ==================== */
+  flex: 0 0 23%;
+  max-width: 23%;
+  margin-left: auto;
+  padding-top: 12px;
+}
+
+.page-footer__bottom {
+  border-top: 1px solid #808080;
+}
+
+.page-footer__copyright {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #999999;
+}
