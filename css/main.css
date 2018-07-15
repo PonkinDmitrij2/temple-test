@@ -392,7 +392,7 @@ body {
    $INDEX-LAYOUT
    ======================================== */
 .index-container {
-  margin-bottom: 50px;
+  margin-bottom: 69px;
 }
 
 .index-row {
@@ -755,6 +755,47 @@ body {
 .pagination__link--disabled path,
 .pagination__link--disabled:hover path {
   stroke: #b3b3b3;
+}
+
+
+
+/* ========================================
+   $CONSTRUCTION-PROGRESS
+   ======================================== */
+.construction-progress {
+  background: url("../img/bg/construction-progress-bg.jpg") center top / cover no-repeat;
+}
+
+.construction-progress__row {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 560px;
+  padding: 70px 0;
+}
+
+.construction-progress__col-left {
+  flex: 0 0 32%;
+  max-width: 32%;
+  align-self: flex-end;
+}
+
+.alert {
+  display: flex;
+}
+
+.alert__text {
+  margin: 0;
+  padding: 16px 20px;
+  padding-right: 47px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #262626;
+  background-color: #fff;
+}
+
+.alert__link {
+  padding-left: 33px;
+  padding-right: 33px;
 }
 
 
