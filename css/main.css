@@ -394,12 +394,18 @@ body {
   opacity: 0.6;
   transition: opacity 0.5s;
   cursor: pointer;
+  outline: none;
 }
 
 .carousel__indicator:hover,
 .carousel__indicator:focus,
 .carousel__indicator--active {
   opacity: 1;
+}
+
+.carousel__indicator:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #2f7cc0;
 }
 
 .carousel__indicator--active {
